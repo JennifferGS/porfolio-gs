@@ -1,40 +1,51 @@
 <!DOCTYPE html>
-<html lang="pt_br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <title>Sobre mim</title>
 </head>
 <body>
     <header class="cabecalho">
         <nav class="cabecalho_menu">
-            <a href="index.html" class="cabecalho_menu_link">Home</a>
-            <a href="sobre.html" class="cabecalho_menu_link">Sobre mim</a>
+            <a href="index.html" class="cabecalho_menu_link" data-aos="fade-right">Home</a>
+            <a href="sobre.html" class="cabecalho_menu_link" data-aos="fade-right" data-aos-delay="200">Sobre mim</a>
         </nav>
     </header>
     <main class="apresentacao">
-        <section class="apresentacao__conteudo">
+        <section class="apresentacao__conteudo" data-aos="fade-up">
             <h1 class="apresentacao__conteudo__titulo">Sobre mim</h1>
-            <p class="apresentacao__conteudo__texto">Meu nome é Jenniffer Glenda , sou um iniciante em 
-                programação e estou animada para compartilhar meu portfólio com você! Eu comecei a 
-                aprender programação há 3 anos e desde então tenho trabalhado duro para 
-                melhorar minhas habilidades e construir projetos interessantes.</p>
-                <p class="apresentacao__conteudo__texto">Atualmente, me sinto mais confortável trabalhando
-                     com PHP com o fremework laravel, mas estou sempre aprendendo coisas novas e 
-                     expandindo meu conhecimento em outras áreas. Alguns dos projetos que desenvolvi 
-                     incluem controle de estoques e permissoções.</p>
-                <p class="apresentacao__conteudo__texto">Além disso, também participei de alguns cursos 
-                    e workshops online para aprimorar minhas habilidades em programação. Durante essas 
-                    atividades, tive a oportunidade de trabalhar em projetos em grupo e aprender com 
-                    outros programadores mais experientes.</p>
-                <p class="apresentacao__conteudo__texto">Estou animada para continuar aprendendo e 
-                    desenvolvendo projetos interessantes e desafiadores. Se você estiver interessado 
-                    em me contratar para um projeto ou quiser saber mais sobre mim e meu trabalho,
-                     não hesite em entrar em contato!</p>
+            <p class="apresentacao__conteudo__texto" data-aos="fade-left">Meu nome é Jenniffer Glenda, sou formada em Ciência da Computação e apaixonada por tecnologia
+                e programação. Desde que comecei minha jornada na área há 4 anos, tenho me dedicado 
+                a aprimorar minhas habilidades e construir projetos que resolvam problemas reais.</p>
+            <p class="apresentacao__conteudo__texto" data-aos="fade-left" data-aos-delay="200">Atualmente, me sinto mais confortável trabalhando com 
+                PHP utilizando o framework Laravel, mas estou constantemente explorando novas tecnologias e 
+                expandindo meus conhecimentos. Alguns dos projetos que desenvolvi incluem sistemas de controle 
+                de estoque e gerenciamento de permissões.</p>
+            <p class="apresentacao__conteudo__texto" data-aos="fade-left" data-aos-delay="400">Além disso, tenho sólida experiência em metodologias ágeis,
+                especialmente no uso do Scrum, o que me permite organizar e gerenciar projetos de forma 
+                eficiente, entregando resultados consistentes e de alta qualidade. Essa habilidade 
+                foi consolidada tanto em projetos acadêmicos quanto em iniciativas práticas.</p>
+            <p class="apresentacao__conteudo__texto" data-aos="fade-left" data-aos-delay="600">Durante minha formação e ao longo de minha carreira,
+                participei de diversos cursos e workshops online que me permitiram aprofundar 
+                minhas habilidades e trabalhar em projetos colaborativos. Essas experiências foram 
+                fundamentais para o meu crescimento profissional e pessoal.</p>
+            <p class="apresentacao__conteudo__texto" data-aos="fade-left" data-aos-delay="800">Estou sempre em busca de novos desafios e projetos
+                inovadores. Se você estiver interessado em me contratar ou quiser saber mais sobre
+                meu trabalho, não hesite em entrar em contato!</p>
         </section>
-        <img src="assets/foto.jpg" alt="foto" class="foto_lider">
+        <img src="assets/foto.jpg" alt="foto" class="foto_lider" data-aos="zoom-in" data-aos-delay="1000">
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Duração da animação em milissegundos
+            easing: 'ease-in-out', // Tipo de animação
+            once: true // A animação ocorre apenas uma vez
+        });
+    </script>
 </body>
 </html>

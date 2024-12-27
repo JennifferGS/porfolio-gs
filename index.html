@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
+    <title>Portfólio</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </head>
 
 <body>
@@ -17,16 +18,18 @@
             <a href="sobre.html" class="cabecalho_menu_link">Sobre mim</a>
         </nav>
     </header>
-     <!-- Estrutura cabeçalho -->
+    <!-- Estrutura cabeçalho -->
 
     <main class="apresentacao">
-        <section class="apresentacao__conteudo">
+        <section class="apresentacao__conteudo" data-aos="fade-up">
             <h1 class="apresentacao__conteudo__titulo">Sou uma desenvolvedora<strong 
             class="titulo-destaque"> Full Stack de qualidade!
             </strong></h1>
-            <p class="apresentacao__conteudo__texto">Olá, Sou Jenniffer Glenda desenvolvedora
-                Full Stack, com especialidade em PHP| Java| bootstrap| SQL| HTML| CSS| JavaScript| Git| GITHUB.</p>
-            <div class="apresentacao__links">
+            <p class="apresentacao__conteudo__texto" data-aos="fade-right">Olá, sou Jenniffer Glenda, desenvolvedora Full Stack com sólida experiência em 
+                diversas tecnologias, incluindo PHP, Java, Bootstrap, SQL, HTML, CSS, JavaScript, Git e GitHub. 
+                Minha especialidade está em criar soluções completas e eficazes, unindo design front-end e funcionalidades robustas no back-end.</p>
+
+            <div class="apresentacao__links" data-aos="zoom-in">
                 <br><br>
                 <h2 class="apresentacao__links__subtitulo">Acesse minhas redes</h2>
                 <a class="apresentacao__links__link" href="https://github.com/JennifferGS/JennifferGS">
@@ -35,22 +38,30 @@
                 </a>
                 <a class="apresentacao__links__link" href="https://www.linkedin.com/in/jenniffer-glenda-silva-santos-249b54268/">
                     <img class="linkedin" src="./assets/linkedin-fire.png">
-                    Linkdin
+                    LinkedIn
                 </a>
 
                 <a class="apresentacao__links__link" href="mailto:jennifferglenda9@gmail.com">
                     <img class="email_img" src="./assets/image.png">
                     Gmail
                 </a>
-
             </div>
         </section>
-        <img src="assets/foto.jpg" alt="Foto" class="foto_lider">
+        <img src="assets/foto.jpg" alt="Foto" class="foto_lider" data-aos="fade-in">
     </main>
     <footer>
         <br><br>
-        <h1 class="rodape">Desenvolvido por Jenniffer Glenda</h1>
+        <h1 class="rodape" data-aos="fade-up">Desenvolvido por Jenniffer Glenda</h1>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Duração da animação em milissegundos
+            easing: 'ease-in-out', // Tipo de animação
+            once: true // A animação ocorre apenas uma vez
+        });
+    </script>
 </body>
+
 </html>
